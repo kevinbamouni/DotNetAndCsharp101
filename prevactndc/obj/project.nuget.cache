@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KWUTKoMDBL171tlGKJgptVh+VU0SgSX6MMbhFcGHW3bh3Xh5AUlCzX9XAlZQvIFza7KHoGNmeimqt3Riwmp5DA==",
+  "dgSpecHash": "Mm9a/zFDDW40MHsnhWvw3OiplArFb0j0PYK3l1ZY0tanFm9d6VaZsM2tlZtGpNS+FAQuYbAuWJrmFyoUM5LxKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\work\\source\\repos\\databasesoft\\prevactndc\\prevactndc.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\work\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
+    "C:\\Users\\work\\.nuget\\packages\\fluent.ribbon\\8.0.3\\fluent.ribbon.8.0.3.nupkg.sha512",
+    "C:\\Users\\work\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\work\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
   "logs": []
 }

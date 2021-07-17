@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:prevactndc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="PREVACT ndc" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0" Grid.ColumnSpan="2" LastChildFill="False" >
+            <ToolBarTray DockPanel.Dock="Top" Height="30" >
+                <ToolBar>
+                    <Button Command="New" Content="New" />
+                </ToolBar>
+            </ToolBarTray>
+        </DockPanel>
+
+        <DockPanel Grid.Column="0" Grid.Row="2" LastChildFill="False" >
+            
+        </DockPanel>
+        
+        <DockPanel Grid.Row="3" Grid.ColumnSpan="2" >
+            <StatusBar DockPanel.Dock="Bottom">
+                <StatusBarItem>
+                    <TextBlock Name="lblCursorPosition" />
+                </StatusBarItem>
+            </StatusBar>
+        </DockPanel>
 
     </Grid>
 </Window>
