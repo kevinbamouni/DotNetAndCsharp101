@@ -1,0 +1,15 @@
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\netcoreapp3.1\optionpricing.exe
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\netcoreapp3.1\optionpricing.deps.json
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\netcoreapp3.1\optionpricing.runtimeconfig.json
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\netcoreapp3.1\optionpricing.runtimeconfig.dev.json
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\netcoreapp3.1\optionpricing.dll
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\netcoreapp3.1\optionpricing.pdb
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\netcoreapp3.1\MathNet.Numerics.dll
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\netcoreapp3.1\optionpricing.AssemblyInfoInputs.cache
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\netcoreapp3.1\optionpricing.AssemblyInfo.cs
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\netcoreapp3.1\optionpricing.csproj.CoreCompileInputs.cache
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\netcoreapp3.1\optionpricing.csproj.CopyComplete
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\netcoreapp3.1\optionpricing.dll
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\netcoreapp3.1\optionpricing.pdb
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\netcoreapp3.1\optionpricing.genruntimeconfig.cache
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\netcoreapp3.1\optionpricing.csprojAssemblyReference.cache
