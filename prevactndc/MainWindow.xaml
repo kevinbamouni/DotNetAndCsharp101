@@ -1,36 +1,56 @@
-﻿<Window x:Class="prevactndc.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:prevactndc"
-        mc:Ignorable="d"
-        Title="PREVACT ndc" Height="450" Width="800">
+﻿<Fluent:RibbonWindow x:Class="prevactndc.MainWindow"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:Fluent="urn:fluent-ribbon"
+                        xmlns:local="clr-namespace:prevactndc"
+                        mc:Ignorable="d"
+                        Title="PREVACT ndc" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <DockPanel Grid.Row="0" Grid.ColumnSpan="2" LastChildFill="False" >
-            <ToolBarTray DockPanel.Dock="Top" Height="30" >
-                <ToolBar>
-                    <Button Command="New" Content="New" />
-                </ToolBar>
-            </ToolBarTray>
+        <DockPanel Grid.Row="0" Grid.ColumnSpan="3" LastChildFill="False" >
+            <Fluent:Ribbon DockPanel.Dock="Top">
+                <!--Backstage Fichier-->
+                <Fluent:Ribbon.Menu>
+                    <Fluent:Backstage>
+                    </Fluent:Backstage>
+                </Fluent:Ribbon.Menu>
+
+                <!--Tabs-->
+                <Fluent:RibbonTabItem Header="Home">
+                    <Fluent:RibbonGroupBox Header="Group">
+                        <!--Aller dans les propriétés du fichier icone et faire : "Action de generation = Resource" -->
+                        <Fluent:Button Header="Run" Icon="/icons/whirlwind_38011.ico" LargeIcon="/icons/whirlwind_38011.ico" />
+                        <Fluent:Button Header="Runs settings" Icon="/icons/runsettings.ico" LargeIcon="/icons/runsettings.ico" />
+                    </Fluent:RibbonGroupBox>
+                </Fluent:RibbonTabItem>
+            </Fluent:Ribbon>
         </DockPanel>
 
-        <DockPanel Grid.Column="0" Grid.Row="2" LastChildFill="False" >
-            
+        <DockPanel Grid.Row="1" >
+            <TreeView DockPanel.Dock="Left">
+            </TreeView >
         </DockPanel>
-        
-        <DockPanel Grid.Row="3" Grid.ColumnSpan="2" >
+
+        <GridSplitter Grid.Row="1" Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
+
+        <DockPanel Grid.Row="1" Grid.Column="2" >
+            <DataGrid DockPanel.Dock="Right" >
+            </DataGrid>
+        </DockPanel>
+
+        <DockPanel Grid.Row="2" Grid.ColumnSpan="3" >
             <StatusBar DockPanel.Dock="Bottom">
                 <StatusBarItem>
                     <TextBlock Name="lblCursorPosition" />
@@ -39,4 +59,4 @@
         </DockPanel>
 
     </Grid>
-</Window>
+</Fluent:RibbonWindow>

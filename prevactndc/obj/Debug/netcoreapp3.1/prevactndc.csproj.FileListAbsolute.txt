@@ -17,3 +17,9 @@ C:\Users\work\source\repos\databasesoft\prevactndc\obj\Debug\netcoreapp3.1\preva
 C:\Users\work\source\repos\databasesoft\prevactndc\obj\Debug\netcoreapp3.1\prevactndc.dll
 C:\Users\work\source\repos\databasesoft\prevactndc\obj\Debug\netcoreapp3.1\prevactndc.pdb
 C:\Users\work\source\repos\databasesoft\prevactndc\obj\Debug\netcoreapp3.1\prevactndc.genruntimeconfig.cache
+C:\Users\work\source\repos\databasesoft\prevactndc\bin\Debug\netcoreapp3.1\ControlzEx.dll
+C:\Users\work\source\repos\databasesoft\prevactndc\bin\Debug\netcoreapp3.1\Fluent.dll
+C:\Users\work\source\repos\databasesoft\prevactndc\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+C:\Users\work\source\repos\databasesoft\prevactndc\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\work\source\repos\databasesoft\prevactndc\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\work\source\repos\databasesoft\prevactndc\obj\Debug\netcoreapp3.1\prevactndc.csproj.CopyComplete
