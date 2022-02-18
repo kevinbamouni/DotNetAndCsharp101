@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons\runsettings.ico" />
+    <None Remove="icons\whirlwind_38011.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icons\whirlwind_38011.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fluent.Ribbon" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icons\runsettings.ico" />
+  </ItemGroup>
+
+</Project>

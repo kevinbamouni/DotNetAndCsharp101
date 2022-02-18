@@ -7,11 +7,16 @@
                         xmlns:local="clr-namespace:prevactndc"
                         mc:Ignorable="d"
                         Title="PREVACT ndc" Height="450" Width="800">
+    <Window.Resources>
+        <BitmapImage x:Key="MyIconRunSettings" UriSource="/icons/runsettings.ico"/>
+        <BitmapImage x:Key="MyIconRun" UriSource="/icons/whirlwind_38011.ico"/>
+    </Window.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="5" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -29,10 +34,20 @@
 
                 <!--Tabs-->
                 <Fluent:RibbonTabItem Header="Home">
-                    <Fluent:RibbonGroupBox Header="Group">
+                    <Fluent:RibbonGroupBox Header="Executions">
                         <!--Aller dans les propriétés du fichier icone et faire : "Action de generation = Resource" -->
-                        <Fluent:Button Header="Run" Icon="/icons/whirlwind_38011.ico" LargeIcon="/icons/whirlwind_38011.ico" />
-                        <Fluent:Button Header="Runs settings" Icon="/icons/runsettings.ico" LargeIcon="/icons/runsettings.ico" />
+                        <Fluent:Button Header="Run" Icon="{StaticResource MyIconRun}" LargeIcon="{StaticResource MyIconRun}" />
+                        <Fluent:Button Header="Runs settings" Icon="{StaticResource MyIconRunSettings}" LargeIcon="{StaticResource MyIconRunSettings}" />
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox Header="Models library">
+                        <!--Aller dans les propriétés du fichier icone et faire : "Action de generation = Resource" -->
+                        <Fluent:Button Header="Deterministic Models" Icon="/icons/whirlwind_38011.ico" LargeIcon="/icons/whirlwind_38011.ico" />
+                        <Fluent:Button Header="Stochastic Models" Icon="/icons/runsettings.ico" LargeIcon="/icons/runsettings.ico" />
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox Header="Results">
+                        <!--Aller dans les propriétés du fichier icone et faire : "Action de generation = Resource" -->
+                        <Fluent:Button Header="Results files" Icon="/icons/whirlwind_38011.ico" LargeIcon="/icons/whirlwind_38011.ico" />
+                        <Fluent:Button Header="Reports" Icon="/icons/runsettings.ico" LargeIcon="/icons/runsettings.ico" />
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
             </Fluent:Ribbon>

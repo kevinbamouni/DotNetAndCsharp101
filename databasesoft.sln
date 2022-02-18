@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "databasesoft", "databasesoft\databasesoft.csproj", "{80F47173-D8D9-4F06-874A-65840DBF8133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCallOptionPricer", "databasesoft\WpfCallOptionPricer.csproj", "{80F47173-D8D9-4F06-874A-65840DBF8133}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sqlitedatabase", "sqlitedatabase\sqlitedatabase.csproj", "{AF772C26-67C0-4DA0-B888-5AD2FC76C81E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqliteUseCase", "sqlitedatabase\SqliteUseCase.csproj", "{AF772C26-67C0-4DA0-B888-5AD2FC76C81E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sqliteinversdata", "sqliteinversdata\sqliteinversdata.csproj", "{021AF4E9-2358-44F5-BF85-32D984CD9C4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqliteInverseDataUseCase", "sqliteinversdata\SqliteInverseDataUseCase.csproj", "{021AF4E9-2358-44F5-BF85-32D984CD9C4A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "optionpricing", "optionpricing\optionpricing.csproj", "{061AA35E-1658-4E2A-9290-8D69C5D3127F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallOptionPricing", "optionpricing\CallOptionPricing.csproj", "{061AA35E-1658-4E2A-9290-8D69C5D3127F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prevactndc", "prevactndc\prevactndc.csproj", "{9058CD04-0ADC-40C4-9420-39C7C71DD548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfFluentRibbonTest", "prevactndc\WpfFluentRibbonTest.csproj", "{9058CD04-0ADC-40C4-9420-39C7C71DD548}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
