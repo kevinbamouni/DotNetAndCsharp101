@@ -42,7 +42,7 @@
           "dependencies": {
             "Fluent.Ribbon": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[9.0.3, )"
             }
           },
           "imports": [

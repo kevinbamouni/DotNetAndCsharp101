@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("SqliteInverseDatauseCase")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("SqliteInverseDataUseCase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("SqliteInverseDatauseCase")]
-[assembly: System.Reflection.AssemblyTitleAttribute("SqliteInverseDatauseCase")]
+[assembly: System.Reflection.AssemblyProductAttribute("SqliteInverseDataUseCase")]
+[assembly: System.Reflection.AssemblyTitleAttribute("SqliteInverseDataUseCase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

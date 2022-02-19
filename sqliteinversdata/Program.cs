@@ -4,7 +4,6 @@ using System.Linq;
 using System.Data;
 using Dapper;
 using Microsoft.Data.Sqlite; //Bibliotheque officielle de microsoft pour se connecter à Sqlite
-using System.Collections.Generic;
 
 namespace sqliteinversdata
 {
