@@ -3,20 +3,49 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfChinookDataApp"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         mc:Ignorable="d"
         Title="Title" Height="450" Width="800">
     <Window.Resources>
-        <local:MainWindow x:Key="LocalMainWindow"/>
     </Window.Resources>
     <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-        <DataGrid x:Name="dataGrid" Grid.Row="1" d:Visibility="Visible" d:IsReadOnly="True"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File" FontFamily="Roboto">
+                </MenuItem>
+                <MenuItem Header="_Tools">
+                </MenuItem>
+            </Menu>
+            <ToolBarTray DockPanel.Dock="Top">
+                <ToolBar>
+                    <Button Command="New" Content="New" />
+                    <Button Command="Open" Content="Open" />
+                    <Button Command="Save" Content="Save" />
+                </ToolBar>
+                <ToolBar>
+                    <Button Command="Cut" Content="Cut" />
+                    <Button Command="Copy" Content="Copy" />
+                    <Button Command="Paste" Content="Paste" />
+                </ToolBar>
+            </ToolBarTray>
+            <DataGrid x:Name="dataGrid" Grid.Row="1" d:Visibility="Visible" d:IsReadOnly="True"/>
+        </DockPanel>
+
+        <DockPanel  Grid.Row="2">
+            <StatusBar DockPanel.Dock="Bottom">
+                <StatusBarItem>
+                    <TextBlock Name="lblCursorPosition" />
+                </StatusBarItem>
+            </StatusBar>
+        </DockPanel>
     </Grid>
 </Window>
