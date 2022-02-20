@@ -13,4 +13,18 @@
     <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="icons\" />
+    <Folder Include="data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="fonts\Roboto-Regular.ttf" />
+    <Resource Include="fonts\Roboto-Medium.ttf"/>
+    <Resource Include="fonts\Roboto-MediumItalic.ttf"/>
+    <Resource Include="fonts\RobotoMono-Medium.ttf" />
+    <Resource Include="fonts\RobotoMono-Regular.ttf" />
+    <Resource Include="fonts\RobotoMono-Bold.ttf" />
+  </ItemGroup>
+
 </Project>

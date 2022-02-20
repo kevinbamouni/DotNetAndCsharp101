@@ -5,13 +5,42 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
+            
             <ResourceDictionary.MergedDictionaries>
                 <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.FlatButton.xaml" />
                 <!-- Theme setting -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            
+            <Style x:Key="TabItemStyle1" TargetType="{x:Type TabItem}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type TabItem}">
+                            <Border x:Name="Border" BorderThickness="1,1,1,0" CornerRadius="5,5,0,0"
+                        Padding="25,5,25,5" Margin="0,0,0,0" BorderBrush="Gainsboro">
+                                <ContentPresenter x:Name="ContentSite" ContentSource="Header" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="TextElement.Foreground" TargetName="ContentSite" Value="White"/>
+                                    <Setter TargetName="Border" Property="Background" Value="green"/>
+                                </Trigger>
+                                <Trigger Property="IsSelected" Value="False">
+                                    <Setter Property="TextElement.Foreground" TargetName="ContentSite" Value="Black"/>
+                                    <Setter TargetName="Border" Property="Background" Value="White" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            
+            <FontFamily x:Key="Roboto">pack://application:,,,/fonts/#RobotO</FontFamily>
+            <FontFamily x:Key="RobotMono">pack://application:,,,/fonts/#RototoMono</FontFamily>
         </ResourceDictionary>
+        
     </Application.Resources>
 </Application>

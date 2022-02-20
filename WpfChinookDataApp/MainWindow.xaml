@@ -6,19 +6,20 @@
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         mc:Ignorable="d"
         Title="Title" Height="450" Width="800">
-    <Window.Resources>
-    </Window.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <DockPanel Grid.Row="0">
+        <DockPanel Grid.Row="0" Grid.ColumnSpan="3" LastChildFill="False">
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_File" FontFamily="Roboto">
                 </MenuItem>
@@ -37,10 +38,32 @@
                     <Button Command="Paste" Content="Paste" />
                 </ToolBar>
             </ToolBarTray>
-            <DataGrid x:Name="dataGrid" Grid.Row="1" d:Visibility="Visible" d:IsReadOnly="True"/>
         </DockPanel>
 
-        <DockPanel  Grid.Row="2">
+        <DockPanel Grid.Row="1" >
+            <TreeView DockPanel.Dock="Left">
+            </TreeView >
+        </DockPanel>
+
+        <GridSplitter Grid.Row="1" Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
+
+        <DockPanel Grid.Row="1" Grid.Column="2" >
+            <TabControl x:Name="tabControl" TabStripPlacement="Top">
+                <TabItem Header="Input Data" Style="{DynamicResource TabItemStyle1}">
+                    <DataGrid x:Name="dataGrid" Grid.Row="1" d:Visibility="Visible" d:IsReadOnly="True"/>
+                </TabItem>
+                <TabItem Header="TabItem" Style="{DynamicResource TabItemStyle1}">
+                    <Grid Background="#FFE5E5E5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="71*"/>
+                            <ColumnDefinition Width="453*"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </DockPanel>
+
+        <DockPanel Grid.Row="2" Grid.ColumnSpan="3" LastChildFill="False">
             <StatusBar DockPanel.Dock="Bottom">
                 <StatusBarItem>
                     <TextBlock Name="lblCursorPosition" />
