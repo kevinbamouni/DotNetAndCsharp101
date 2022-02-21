@@ -20,13 +20,13 @@
         </Grid.RowDefinitions>
 
         <DockPanel Grid.Row="0" Grid.ColumnSpan="3" LastChildFill="False">
-            <Menu DockPanel.Dock="Top">
-                <MenuItem Header="_File" FontFamily="Roboto">
+            <Menu DockPanel.Dock="Top" Background="#EEEEF2">
+                <MenuItem  Header="_FileAlmost" Style="{DynamicResource MenuItemStyle}">
                 </MenuItem>
-                <MenuItem Header="_Tools">
+                <MenuItem Header="_Tools" Style="{DynamicResource MenuItemStyle}">
                 </MenuItem>
             </Menu>
-            <ToolBarTray DockPanel.Dock="Top">
+            <ToolBarTray DockPanel.Dock="Top" >
                 <ToolBar>
                     <Button Command="New" Content="New" />
                     <Button Command="Open" Content="Open" />
