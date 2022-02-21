@@ -115,7 +115,9 @@
             <FontFamily x:Key="Roboto">pack://application:,,,/fonts/#Roboto</FontFamily>
             <FontFamily x:Key="RobotoMono">pack://application:,,,/fonts/#Rototo Mono</FontFamily>
 
-            <!--Control colors.-->
+            <Image x:Key="Play" Source="/WpfChinookDataApp;component/icons/angle-left-solid.png" Height="50" Width="50" />
+
+                    <!--Control colors.-->
             <Color x:Key="VisualStudioGrey">#EEEEF2</Color>
             <Color x:Key="WindowColor">#FFE8EDF9</Color>
             <Color x:Key="ContentAreaColorLight">#FFC5CBF9</Color>

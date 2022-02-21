@@ -28,9 +28,26 @@
             </Menu>
             <ToolBarTray DockPanel.Dock="Top" >
                 <ToolBar>
-                    <Button Command="New" Content="New" />
-                    <Button Command="Open" Content="Open" />
-                    <Button Command="Save" Content="Save" />
+                    <Button Padding="5">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/icons/whirlwind_38011.ico" Width="20" Height="20" />
+                        </StackPanel>
+                    </Button>
+                    <Button Padding="5">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/icons/copy-solid.png" Width="20" Height="20" />
+                        </StackPanel>
+                    </Button>
+                    <Button Padding="5">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/icons/file-excel-solid.png" Width="20" Height="20" />
+                        </StackPanel>
+                    </Button>
+                    <Button Padding="5">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/icons/floppy-disk-solid.png" Width="20" Height="20" />
+                        </StackPanel>
+                    </Button>
                 </ToolBar>
                 <ToolBar>
                     <Button Command="Cut" Content="Cut" />

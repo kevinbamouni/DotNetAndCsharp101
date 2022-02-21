@@ -8,23 +8,205 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="icons\a-solid.png" />
+    <None Remove="icons\angle-left-solid.png" />
+    <None Remove="icons\angle-right-solid.png" />
+    <None Remove="icons\ban-solid.png" />
+    <None Remove="icons\brain-solid.png" />
+    <None Remove="icons\calculator-solid.png" />
+    <None Remove="icons\calendar-days-solid.png" />
+    <None Remove="icons\check-solid.png" />
+    <None Remove="icons\clipboard-regular.png" />
+    <None Remove="icons\clipboard-solid.png" />
+    <None Remove="icons\copy-regular.png" />
+    <None Remove="icons\copy-solid.png" />
+    <None Remove="icons\database-solid.png" />
+    <None Remove="icons\desktop-solid.png" />
+    <None Remove="icons\download-solid.png" />
+    <None Remove="icons\face-frown-solid.png" />
+    <None Remove="icons\face-smile-solid.png" />
+    <None Remove="icons\file-csv-solid.png" />
+    <None Remove="icons\file-excel-solid.png" />
+    <None Remove="icons\file-export-solid.png" />
+    <None Remove="icons\file-import-solid.png" />
+    <None Remove="icons\file-lines-solid.png" />
+    <None Remove="icons\file-pdf-solid.png" />
+    <None Remove="icons\file-solid.png" />
+    <None Remove="icons\file-word-solid.png" />
+    <None Remove="icons\floppy-disk-solid.png" />
+    <None Remove="icons\folder-open-solid.png" />
+    <None Remove="icons\folder-plus-solid.png" />
+    <None Remove="icons\info-solid.png" />
+    <None Remove="icons\magnifying-glass-solid.png" />
+    <None Remove="icons\newspaper-solid.png" />
+    <None Remove="icons\p-solid.png" />
+    <None Remove="icons\paper-plane-solid %281%29.png" />
+    <None Remove="icons\paper-plane-solid.png" />
+    <None Remove="icons\paste-regular.png" />
+    <None Remove="icons\paste-solid.png" />
+    <None Remove="icons\person-running-solid.png" />
+    <None Remove="icons\play-solid.png" />
+    <None Remove="icons\plus-solid.png" />
+    <None Remove="icons\print-solid.png" />
+    <None Remove="icons\stop-solid.png" />
+    <None Remove="icons\table-solid.png" />
+    <None Remove="icons\trash-solid.png" />
+    <None Remove="icons\user-solid.png" />
+    <None Remove="icons\xmark-solid.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icons\a-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\angle-left-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\angle-right-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\ban-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\brain-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\calculator-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\calendar-days-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\check-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\clipboard-regular.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\clipboard-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\copy-regular.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\copy-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\database-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\desktop-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\download-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\face-frown-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\face-smile-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\file-csv-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\file-excel-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\file-export-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\file-import-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\file-lines-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\file-pdf-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\file-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\file-word-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\floppy-disk-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\folder-open-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\folder-plus-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\info-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\magnifying-glass-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\newspaper-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\p-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\paper-plane-solid (1).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\paper-plane-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\paste-regular.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\paste-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\person-running-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\play-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\plus-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\print-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\runsettings.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\stop-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\table-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\trash-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\user-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\whirlwind_38011.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\xmark-solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="icons\" />
     <Folder Include="data\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="fonts\Roboto-Regular.ttf" />
-    <Resource Include="fonts\Roboto-Medium.ttf"/>
-    <Resource Include="fonts\Roboto-MediumItalic.ttf"/>
-    <Resource Include="fonts\RobotoMono-Medium.ttf" />
-    <Resource Include="fonts\RobotoMono-Regular.ttf" />
-    <Resource Include="fonts\RobotoMono-Bold.ttf" />
   </ItemGroup>
 
 </Project>
