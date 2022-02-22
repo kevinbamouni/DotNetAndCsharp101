@@ -8,6 +8,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="fonts\Roboto-Black.ttf" />
+    <None Remove="fonts\Roboto-BlackItalic.ttf" />
+    <None Remove="fonts\Roboto-Bold.ttf" />
+    <None Remove="fonts\Roboto-BoldItalic.ttf" />
+    <None Remove="fonts\Roboto-Italic.ttf" />
+    <None Remove="fonts\Roboto-Light.ttf" />
+    <None Remove="fonts\Roboto-LightItalic.ttf" />
+    <None Remove="fonts\Roboto-Medium.ttf" />
+    <None Remove="fonts\Roboto-MediumItalic.ttf" />
+    <None Remove="fonts\Roboto-Regular.ttf" />
+    <None Remove="fonts\Roboto-Thin.ttf" />
+    <None Remove="fonts\Roboto-ThinItalic.ttf" />
+    <None Remove="fonts\RobotoMono-Bold.ttf" />
+    <None Remove="fonts\RobotoMono-BoldItalic.ttf" />
+    <None Remove="fonts\RobotoMono-ExtraLight.ttf" />
+    <None Remove="fonts\RobotoMono-ExtraLightItalic.ttf" />
+    <None Remove="fonts\RobotoMono-Italic.ttf" />
+    <None Remove="fonts\RobotoMono-Light.ttf" />
+    <None Remove="fonts\RobotoMono-LightItalic.ttf" />
+    <None Remove="fonts\RobotoMono-Medium.ttf" />
+    <None Remove="fonts\RobotoMono-MediumItalic.ttf" />
+    <None Remove="fonts\RobotoMono-Regular.ttf" />
+    <None Remove="fonts\RobotoMono-SemiBold.ttf" />
+    <None Remove="fonts\RobotoMono-SemiBoldItalic.ttf" />
+    <None Remove="fonts\RobotoMono-Thin.ttf" />
+    <None Remove="fonts\RobotoMono-ThinItalic.ttf" />
     <None Remove="icons\a-solid.png" />
     <None Remove="icons\angle-left-solid.png" />
     <None Remove="icons\angle-right-solid.png" />
@@ -56,6 +82,84 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="fonts\Roboto-Black.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-BlackItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-BoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-Italic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-LightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-MediumItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-Thin.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\Roboto-ThinItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-BoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-ExtraLight.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-ExtraLightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-Italic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-LightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-MediumItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-Thin.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\RobotoMono-ThinItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="icons\a-solid.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

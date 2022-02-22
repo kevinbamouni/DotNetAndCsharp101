@@ -19,6 +19,8 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <!-- *************************************** ToolBar and Menu Pane ********************************************-->
+        <!-- **********************************************************************************************************-->
         <DockPanel Grid.Row="0" Grid.ColumnSpan="3" LastChildFill="False">
             <Menu DockPanel.Dock="Top" Background="#EEEEF2">
                 <MenuItem  Header="_FileAlmost" Style="{DynamicResource MenuItemStyle}">
@@ -57,11 +59,21 @@
             </ToolBarTray>
         </DockPanel>
 
+        <!-- *********************************************** Navigation Pane ********************************************-->
+        <!-- ************************************************************************************************************-->
         <DockPanel Grid.Row="1" Background="#FFE5E5E5">
             <Grid Margin="10">
-                <TreeView Background="#FFE5E5E5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Row="0" Background="LightGray" >
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Center">Navigation Pane</Label>
+                    <ToggleButton HorizontalAlignment="Right" VerticalAlignment="Center">ExpandAll</ToggleButton>
+                </DockPanel>
+                <TreeView Background="#FFE5E5E5" Grid.Row="1">
                     <TreeViewItem Header="Level 1" IsExpanded="True">
-                        <TreeViewItem Header="Level 2.1" />
+                        <TreeViewItem Header="Level 2.1" FontFamily="fonts\RobotoMono-Bold.ttf"/>
                         <TreeViewItem Header="Level 2.2" IsExpanded="True">
                             <TreeViewItem Header="Level 3.1" />
                             <TreeViewItem Header="Level 3.2" />
@@ -80,8 +92,12 @@
             </Grid>
         </DockPanel>
 
+        <!-- ************************************************* Splitter Pane ********************************************-->
+        <!-- ************************************************************************************************************-->
         <GridSplitter Grid.Row="1" Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
 
+        <!-- ******************************************** DataView/Work Pane ********************************************-->
+        <!-- ************************************************************************************************************-->
         <DockPanel Grid.Row="1" Grid.Column="2" >
             <TabControl x:Name="tabControl" TabStripPlacement="Top">
                 <TabItem Header="Input Data" Style="{DynamicResource TabItemStyle1}">
@@ -124,6 +140,8 @@
             </TabControl>
         </DockPanel>
 
+        <!-- ********************************************* Status Pane *****************************************************-->
+        <!-- ***************************************************************************************************************-->
         <DockPanel Grid.Row="2" Grid.ColumnSpan="3" LastChildFill="False">
             <StatusBar DockPanel.Dock="Bottom">
                 <StatusBarItem>
