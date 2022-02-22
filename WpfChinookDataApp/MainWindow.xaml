@@ -67,9 +67,14 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <DockPanel Grid.Row="0" Background="LightGray" >
+                <Border BorderBrush="Black" BorderThickness="1"/>
+                <DockPanel Grid.Row="0" Background="#FFE5E5E5" >
                     <Label HorizontalAlignment="Left" VerticalAlignment="Center">Navigation Pane</Label>
-                    <ToggleButton HorizontalAlignment="Right" VerticalAlignment="Center">ExpandAll</ToggleButton>
+                    <ToggleButton HorizontalAlignment="Right" VerticalAlignment="Center" Background="LightGray">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/icons/arrows-up-down-solid.png" Width="10" Height="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ToggleButton>
                 </DockPanel>
                 <TreeView Background="#FFE5E5E5" Grid.Row="1">
                     <TreeViewItem Header="Level 1" IsExpanded="True">

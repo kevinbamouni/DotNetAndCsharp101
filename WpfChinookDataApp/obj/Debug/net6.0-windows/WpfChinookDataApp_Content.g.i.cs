@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/chinook.db")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/roboto-black.ttf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/roboto-blackitalic.ttf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/roboto-bold.ttf")]
@@ -37,6 +38,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/a-solid.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/angle-left-solid.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/angle-right-solid.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/arrows-up-down-solid.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/ban-solid.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/brain-solid.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/calculator-solid.png")]
