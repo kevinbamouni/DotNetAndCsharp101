@@ -48,6 +48,8 @@
                 </Setter>
             </Style>
 
+            <!--General Background Color.-->
+            <SolidColorBrush x:Key="backgroundcolor" Color="#EEEEF2"/>
 
             <!--StatusBar colors.-->
             <Style x:Key="{x:Type StatusBar}" TargetType="{x:Type StatusBar}">

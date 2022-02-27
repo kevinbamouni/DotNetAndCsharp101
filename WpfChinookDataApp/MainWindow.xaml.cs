@@ -28,12 +28,51 @@ namespace WpfChinookDataApp
         public MainWindow()
         {
             InitializeComponent();
-            RequetesChinook requetesChinook = new RequetesChinook();
+
+        }
+
+        public void  ViewAlbums(object sender, RoutedEventArgs e)
+        {
+            RequetesChinook requetesChinook =  new RequetesChinook();
             //dataGrid.ItemsSource= requetesChinook.dt.AsEnumerable();
             Binding b = new Binding();
             b.Source = requetesChinook;
             b.Path = new PropertyPath("dt");
-            dataGrid.SetBinding(DataGrid.ItemsSourceProperty, b);
+            InputDataGrid.SetBinding(DataGrid.ItemsSourceProperty, b);
+        }
+
+        public void ViewArtists(object sender, RoutedEventArgs e)
+        {
+            RequetesChinook requetesChinook = new RequetesChinook();
+            //dataGrid.ItemsSource= requetesChinook.dt.AsEnumerable();
+            Binding b = new Binding();
+            b.Source = requetesChinook;
+            b.Path = new PropertyPath("artists");
+            InputDataGrid.SetBinding(DataGrid.ItemsSourceProperty, b);
+        }
+
+        public async void ViewEmployees(object sender, RoutedEventArgs e)
+        {
+            await Task.Delay(600000);
+            RequetesChinook requetesChinook = new RequetesChinook();
+            //dataGrid.ItemsSource= requetesChinook.dt.AsEnumerable();
+            Binding b = new Binding();
+            b.Source = requetesChinook;
+            b.Path = new PropertyPath("employees");
+            InputDataGrid.SetBinding(DataGrid.ItemsSourceProperty, b);
+            await Task.Delay(600000);
+        }
+
+        public async  void ViewCustumers(object sender, RoutedEventArgs e)
+        {
+            await Task.Delay(600000);
+            RequetesChinook requetesChinook = new RequetesChinook();
+            //dataGrid.ItemsSource= requetesChinook.dt.AsEnumerable();
+            Binding b = new Binding();
+            b.Source = requetesChinook;
+            b.Path = new PropertyPath("customers");
+            InputDataGrid.SetBinding(DataGrid.ItemsSourceProperty, b);
+            await Task.Delay(600000);
         }
     }
 }

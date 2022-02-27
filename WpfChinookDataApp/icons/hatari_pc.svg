@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg761"
+   sodipodi:docname="hatari_pc.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   inkscape:export-filename="C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\icons\hatari_pc.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs765" />
+  <sodipodi:namedview
+     id="namedview763"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.81152344"
+     inkscape:cx="106.58965"
+     inkscape:cy="288.34657"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer5" />
+  <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Layer 4"
+     style="display:inline">
+    <rect
+       style="font-variation-settings:'wght' 300;fill:#ececec"
+       id="rect18552"
+       width="475.64859"
+       height="459.62936"
+       x="19.716005"
+       y="27.109507"
+       inkscape:export-filename="C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\icons\rect18552.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer 2"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;line-height:1.25;font-family:Constantia;-inkscape-font-specification:'Constantia, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000080;fill-opacity:1;stroke:none"
+       x="122.08588"
+       y="279.69775"
+       id="text10707"><tspan
+         sodipodi:role="line"
+         x="122.08588"
+         y="279.69775"
+         id="tspan10973">HATARI</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Layer 3"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 300;fill:#800080;fill-opacity:1;stroke:none"
+       x="429.76562"
+       y="304.9664"
+       id="text14730"
+       inkscape:export-filename="C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\icons\text14730.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan18808"
+         x="429.76562"
+         y="304.9664">P&amp;C</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 1"
+     style="display:inline">
+    <path
+       d="m 34.376061,259.51239 c -0.01879,-5.97408 4.130242,-10.83991 9.267927,-10.85607 l 66.442682,-0.209 c 5.13269,-0.0161 9.31724,4.82347 9.33603,10.79755 0.0176,5.5874 -3.60569,10.20023 -8.28807,10.79497 0.23571,1.00461 0.35533,2.06759 0.35874,3.15028 0.0215,6.8344 -4.72835,12.38846 -10.59191,12.40691 -1.229192,0.004 -2.425938,-0.23791 -3.523654,-0.683 -1.875268,5.83697 -6.712551,9.9954 -12.393403,10.01327 -5.298804,0.0167 -9.89473,-3.58622 -12.037346,-8.8112 -1.805319,1.67225 -4.243955,2.67562 -6.586063,2.68298 -5.099475,0.016 -9.364934,-4.1447 -10.428936,-9.71334 -0.912631,0.30641 -1.892155,0.47189 -2.88879,0.47503 -4.973236,0.0156 -9.161693,-3.95393 -10.339623,-9.30567 -4.664442,-0.56534 -8.310008,-5.15531 -8.327584,-10.74271 z m 8.172259,-38.63523 c 1.144238,-5.35905 5.307639,-9.3549 10.280875,-9.37055 0.996635,-0.003 1.977157,0.14845 2.891715,0.45492 1.02896,-5.57137 5.268153,-9.76079 10.367627,-9.77683 2.342109,-0.007 4.786978,0.97096 6.60283,2.64729 2.109679,-5.24608 6.682853,-8.87588 11.981657,-8.89255 5.680852,-0.0179 10.544183,4.10425 12.45616,9.93703 1.094906,-0.44811 2.290089,-0.70321 3.519286,-0.70708 5.86356,-0.0184 10.64828,5.51529 10.66975,12.34005 0.003,1.08267 -0.10953,2.14638 -0.33892,3.15246 4.68603,0.56527 8.33825,5.15523 8.35582,10.74263 0.0188,5.97407 -4.13522,10.83991 -9.26791,10.85605 l -66.442683,0.20901 c -5.137685,0.0162 -9.317249,-4.82347 -9.336041,-10.79754 -0.01758,-5.5874 3.599042,-10.20022 8.259834,-10.79489 z"
+       id="path759"
+       style="fill:#999999;stroke-width:0.179206" />
+  </g>
+</svg>

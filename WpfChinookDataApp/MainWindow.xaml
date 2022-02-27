@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         mc:Ignorable="d"
-        Title="Title" Height="450" Width="800">
+        Title="HATARI PC" Height="450" Width="800" Icon="/icons/hatari_pc.png">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -22,7 +22,7 @@
         <!-- *************************************** ToolBar and Menu Pane ********************************************-->
         <!-- **********************************************************************************************************-->
         <DockPanel Grid.Row="0" Grid.ColumnSpan="3" LastChildFill="False">
-            <Menu DockPanel.Dock="Top" Background="#EEEEF2">
+            <Menu DockPanel.Dock="Top" Background="{StaticResource backgroundcolor}">
                 <MenuItem  Header="_FileAlmost" Style="{DynamicResource MenuItemStyle}">
                 </MenuItem>
                 <MenuItem Header="_Tools" Style="{DynamicResource MenuItemStyle}">
@@ -30,22 +30,22 @@
             </Menu>
             <ToolBarTray DockPanel.Dock="Top" >
                 <ToolBar>
-                    <Button Padding="5">
+                    <Button Padding="5" Click="ViewAlbums">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/icons/whirlwind_38011.ico" Width="20" Height="20" />
                         </StackPanel>
                     </Button>
-                    <Button Padding="5">
+                    <Button Padding="5" Click="ViewArtists">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/icons/copy-solid.png" Width="20" Height="20" />
                         </StackPanel>
                     </Button>
-                    <Button Padding="5">
+                    <Button Padding="5" Click="ViewCustumers">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/icons/file-excel-solid.png" Width="20" Height="20" />
                         </StackPanel>
                     </Button>
-                    <Button Padding="5">
+                    <Button Padding="5" Click="ViewEmployees">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/icons/floppy-disk-solid.png" Width="20" Height="20" />
                         </StackPanel>
@@ -61,14 +61,14 @@
 
         <!-- *********************************************** Navigation Pane ********************************************-->
         <!-- ************************************************************************************************************-->
-        <DockPanel Grid.Row="1" Background="#FFE5E5E5">
+        <DockPanel Grid.Row="1" Background="{StaticResource backgroundcolor}">
             <Grid Margin="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Border BorderBrush="Black" BorderThickness="1"/>
-                <DockPanel Grid.Row="0" Background="#FFE5E5E5" >
+                <DockPanel Grid.Row="0" Background="{StaticResource backgroundcolor}" >
                     <Label HorizontalAlignment="Left" VerticalAlignment="Center">Navigation Pane</Label>
                     <ToggleButton HorizontalAlignment="Right" VerticalAlignment="Center" Background="LightGray">
                         <StackPanel Orientation="Horizontal">
@@ -76,7 +76,7 @@
                         </StackPanel>
                     </ToggleButton>
                 </DockPanel>
-                <TreeView Background="#FFE5E5E5" Grid.Row="1">
+                <TreeView Background="{StaticResource backgroundcolor}" Grid.Row="1">
                     <TreeViewItem Header="Level 1" IsExpanded="True">
                         <TreeViewItem Header="Level 2.1" FontFamily="fonts\RobotoMono-Bold.ttf"/>
                         <TreeViewItem Header="Level 2.2" IsExpanded="True">
@@ -105,38 +105,41 @@
         <!-- ************************************************************************************************************-->
         <DockPanel Grid.Row="1" Grid.Column="2" >
             <TabControl x:Name="tabControl" TabStripPlacement="Top">
-                <TabItem Header="Input Data" Style="{DynamicResource TabItemStyle1}">
-                    <Grid Background="#FFE5E5E5">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <DataGrid x:Name="dataGrid" Grid.Row="0" Margin="5"  d:Visibility="Visible" d:IsReadOnly="True"/>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Program" Style="{DynamicResource TabItemStyle1}">
-                    <Grid Background="#FFE5E5E5">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Output" Style="{DynamicResource TabItemStyle1}">
-                    <Grid Background="#FFE5E5E5">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Log" Style="{DynamicResource TabItemStyle1}">
-                    <Grid Background="#FFE5E5E5">
+                <TabItem Header="INPUT DATA" Style="{StaticResource TabItemStyle1}">
+                    <Grid Background="{StaticResource backgroundcolor}">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="19*"/>
-                            <ColumnDefinition Width="243*"/>
+                            <ColumnDefinition Width="67*"/>
+                            <ColumnDefinition Width="195*"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                        <TextBlock x:Name="textBlock" Grid.Row="0" FontSize="14" FontFamily="consolas" FontStyle="Italic" TextWrapping="Wrap" Margin="5,5,5,4529" Padding="5,5,5,5" Background="#f5f6ff" Grid.ColumnSpan="2">
+                        <DataGrid x:Name="InputDataGrid" Grid.Row="0" Margin="5,5,5,5"  d:Visibility="Visible" d:IsReadOnly="True" Grid.ColumnSpan="2"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="PROGRAM" Style="{StaticResource TabItemStyle1}">
+                    <Grid Background="{StaticResource backgroundcolor}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="OUTPUT" Style="{StaticResource TabItemStyle1}">
+                    <Grid Background="{StaticResource backgroundcolor}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="LOG" Style="{StaticResource TabItemStyle1}">
+                    <Grid Background="{StaticResource backgroundcolor}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name="LogTextBlock" Grid.Row="0" FontSize="14" FontFamily="consolas" FontStyle="Italic" TextWrapping="Wrap" Margin="5,5,5,5" Padding="5,5,5,5" Background="#f5f6ff">
                             Chaque action d'un système informatique (ouverture d'une session, installation d'un programme, navigation sur Internet...) produit un fichier log. Ces fichiers textes listent chronologiquement les évènements exécutés. Ils s'avèrent utiles pour comprendre la provenance d'une erreur en cas de bug.
                             Ils permettent également d'établir des statistiques de connexions à un site Web ou à un serveur, grâce à des outils comme WebAlizer ou Webtrends. L'analyse des fichiers logs peut se faire manuellement, mais les logs ne sont pas aisés à déchiffrer, et les outils d'analyse fournissent la plupart des informations nécessaires.
                         </TextBlock>
