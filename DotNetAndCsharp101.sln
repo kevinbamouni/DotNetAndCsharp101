@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfFluentRibbonTest", "prev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfChinookDataApp", "WpfChinookDataApp\WpfChinookDataApp.csproj", "{9C41F87D-9426-47BC-BEA7-5772DA960597}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservingPropertyAndCasualty", "ReservingPropertyAndCasualty\ReservingPropertyAndCasualty.csproj", "{F8262AED-C19F-49C7-AF90-82A8B9567206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{9C41F87D-9426-47BC-BEA7-5772DA960597}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C41F87D-9426-47BC-BEA7-5772DA960597}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C41F87D-9426-47BC-BEA7-5772DA960597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8262AED-C19F-49C7-AF90-82A8B9567206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8262AED-C19F-49C7-AF90-82A8B9567206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8262AED-C19F-49C7-AF90-82A8B9567206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8262AED-C19F-49C7-AF90-82A8B9567206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -127,8 +127,11 @@
                 <TabItem Header="OUTPUT" Style="{StaticResource TabItemStyle1}">
                     <Grid Background="{StaticResource backgroundcolor}">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
+                        <WpfPlot Name="TestPlot" Grid.Row="0"/>
+                        <WpfPlot Name="TestPlot1" Grid.Row="1"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="LOG" Style="{StaticResource TabItemStyle1}">

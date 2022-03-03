@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MWsXWI+JvywA+v+FRUb84Jq5G05r/ZXT5xhoyLi5pD5gLm/Q4c1JcRL87lggyUVPUmhk3JXwq0WpQ4M1TqFEYA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\work\\source\\repos\\databasesoft\\optionpricing\\CallOptionPricing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\work\\.nuget\\packages\\mathnet.numerics\\4.15.0\\mathnet.numerics.4.15.0.nupkg.sha512"
+  ],
+  "logs": []
+}

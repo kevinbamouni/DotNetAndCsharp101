@@ -16,6 +16,7 @@ using System.Data;
 using Dapper;
 using Microsoft.Data.Sqlite;
 using System.Data.SqlClient;
+using ScottPlot;
 
 
 namespace WpfChinookDataApp
@@ -28,7 +29,15 @@ namespace WpfChinookDataApp
         public MainWindow()
         {
             InitializeComponent();
+            double[] dataX = new double[] { 1, 2, 3, 4, 5 };
+            double[] dataY = new double[] { 1, 4, 9, 16, 25 };
+            TestPlot.Plot.AddScatter(dataX, dataY);
+            TestPlot.Refresh();
 
+            double[] values = DataGen.RandomWalk(1_000_000);
+            TestPlot1.Plot.AddSignal(values, sampleRate: 48_000);
+            TestPlot1.Plot.Title("One Million Points");
+            TestPlot1.Refresh();
         }
 
         public void  ViewAlbums(object sender, RoutedEventArgs e)
