@@ -1,0 +1,17 @@
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\net6.0\CallOptionPricing.exe
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\net6.0\CallOptionPricing.deps.json
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\net6.0\CallOptionPricing.runtimeconfig.json
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\net6.0\CallOptionPricing.dll
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\net6.0\CallOptionPricing.pdb
+C:\Users\work\source\repos\databasesoft\optionpricing\bin\Debug\net6.0\MathNet.Numerics.dll
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\CallOptionPricing.csproj.AssemblyReference.cache
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\CallOptionPricing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\CallOptionPricing.AssemblyInfoInputs.cache
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\CallOptionPricing.AssemblyInfo.cs
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\CallOptionPricing.csproj.CoreCompileInputs.cache
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\CallOptionPricing.csproj.CopyComplete
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\CallOptionPricing.dll
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\refint\CallOptionPricing.dll
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\CallOptionPricing.pdb
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\CallOptionPricing.genruntimeconfig.cache
+C:\Users\work\source\repos\databasesoft\optionpricing\obj\Debug\net6.0\ref\CallOptionPricing.dll

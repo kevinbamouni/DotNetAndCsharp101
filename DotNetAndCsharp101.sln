@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallOptionPricing", "option
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfFluentRibbonTest", "prevactndc\WpfFluentRibbonTest.csproj", "{9058CD04-0ADC-40C4-9420-39C7C71DD548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfChinookDataApp", "WpfChinookDataApp\WpfChinookDataApp.csproj", "{9C41F87D-9426-47BC-BEA7-5772DA960597}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfChinookDataApp", "WpfChinookDataApp\WpfChinookDataApp.csproj", "{9C41F87D-9426-47BC-BEA7-5772DA960597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservingPropertyAndCasualty", "ReservingPropertyAndCasualty\ReservingPropertyAndCasualty.csproj", "{F8262AED-C19F-49C7-AF90-82A8B9567206}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReservingPropertyAndCasualty", "ReservingPropertyAndCasualty\ReservingPropertyAndCasualty.csproj", "{F8262AED-C19F-49C7-AF90-82A8B9567206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitReservingPAndCTest", "XUnitReservingPAndCTest\XUnitReservingPAndCTest.csproj", "{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{F8262AED-C19F-49C7-AF90-82A8B9567206}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8262AED-C19F-49C7-AF90-82A8B9567206}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8262AED-C19F-49C7-AF90-82A8B9567206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

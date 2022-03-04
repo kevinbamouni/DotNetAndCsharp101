@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\work\\source\\repos\\databasesoft\\XUnitReservingPAndCTest\\XUnitReservingPAndCTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\work\\source\\repos\\databasesoft\\ReservingPropertyAndCasualty\\ReservingPropertyAndCasualty.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\work\\source\\repos\\databasesoft\\ReservingPropertyAndCasualty\\ReservingPropertyAndCasualty.csproj",
+        "projectName": "ReservingPropertyAndCasualty",
+        "projectPath": "C:\\Users\\work\\source\\repos\\databasesoft\\ReservingPropertyAndCasualty\\ReservingPropertyAndCasualty.csproj",
+        "packagesPath": "C:\\Users\\work\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\work\\source\\repos\\databasesoft\\ReservingPropertyAndCasualty\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\work\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Accord.Math": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[4.15.0, )"
+            },
+            "NumSharp": {
+              "target": "Package",
+              "version": "[0.30.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\work\\source\\repos\\databasesoft\\XUnitReservingPAndCTest\\XUnitReservingPAndCTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\work\\source\\repos\\databasesoft\\XUnitReservingPAndCTest\\XUnitReservingPAndCTest.csproj",
+        "projectName": "XUnitReservingPAndCTest",
+        "projectPath": "C:\\Users\\work\\source\\repos\\databasesoft\\XUnitReservingPAndCTest\\XUnitReservingPAndCTest.csproj",
+        "packagesPath": "C:\\Users\\work\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\work\\source\\repos\\databasesoft\\XUnitReservingPAndCTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\work\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\work\\source\\repos\\databasesoft\\ReservingPropertyAndCasualty\\ReservingPropertyAndCasualty.csproj": {
+                "projectPath": "C:\\Users\\work\\source\\repos\\databasesoft\\ReservingPropertyAndCasualty\\ReservingPropertyAndCasualty.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
