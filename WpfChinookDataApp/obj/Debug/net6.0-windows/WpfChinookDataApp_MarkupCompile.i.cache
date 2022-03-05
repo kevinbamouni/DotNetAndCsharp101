@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\App.xaml
-11407045341
+2781395587
 80-2111943979
-72102469793
+81734856772
 213-1514936998
-MainWindow.xaml;
+ImportDelimitedData.xaml;MainWindow.xaml;
 
-False
+True
 

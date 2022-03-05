@@ -38,6 +38,9 @@ namespace WpfChinookDataApp
             TestPlot1.Plot.AddSignal(values, sampleRate: 48_000);
             TestPlot1.Plot.Title("One Million Points");
             TestPlot1.Refresh();
+
+            ImportDelimitedData win2 = new ImportDelimitedData();
+            win2.Show();
         }
 
         public void  ViewAlbums(object sender, RoutedEventArgs e)

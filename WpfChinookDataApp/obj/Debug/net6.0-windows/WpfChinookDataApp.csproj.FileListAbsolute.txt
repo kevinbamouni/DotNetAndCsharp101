@@ -128,3 +128,5 @@ C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\obj\Debug\net6.0-windo
 C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\obj\Debug\net6.0-windows\WpfChinookDataApp.pdb
 C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\obj\Debug\net6.0-windows\WpfChinookDataApp.genruntimeconfig.cache
 C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\obj\Debug\net6.0-windows\ref\WpfChinookDataApp.dll
+C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\obj\Debug\net6.0-windows\ImportDelimitedData.g.cs
+C:\Users\work\source\repos\databasesoft\WpfChinookDataApp\obj\Debug\net6.0-windows\ImportDelimitedData.baml
