@@ -22,6 +22,24 @@ namespace WpfChinookDataApp
         public ImportDelimitedData()
         {
             InitializeComponent();
+
+            // Binding du selecteur de type de colonne pour la lecture des données
+            // Liste des types / Binding datagrid contenant deux types de colonnes différentees textcolumn et comboboxcolumn
+            //
+            Dictionary<int, string> TypeOfColumnData = new Dictionary<int, string>{
+            {1, "Key"},
+            {2, "Origin"},
+            {3, "Developpemnt"},
+            {4, "Loss/Paid"}
+            };
+
+            ListColumnDataImport ll1 = new ListColumnDataImport();
+            Binding binding1 = new Binding();
+            binding1.Source = ll1;
+            schemacol.SetBinding(DataGrid.ItemsSourceProperty, binding1);
+            combocol.ItemsSource = TypeOfColumnData;
+
         }
+
     }
 }

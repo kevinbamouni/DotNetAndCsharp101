@@ -13,13 +13,13 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="146.52" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <GroupBox Margin="5" Padding="2" Header="File to import:" Grid.Row="0" Grid.ColumnSpan="2">
+        <GroupBox Margin="5,5,5,5" Padding="2" Header="File to import:" Grid.Row="0" Grid.ColumnSpan="2">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="8*" />
@@ -30,14 +30,11 @@
             </Grid>
         </GroupBox>
 
-        <StackPanel Grid.Row="1" Grid.Column="0">
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" Grid.RowSpan="2">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="107*" />
-                    <ColumnDefinition Width="19*" />
-                    <ColumnDefinition Width="7*"/>
-                    <ColumnDefinition Width="11*"/>
-                    <ColumnDefinition Width="19*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -58,11 +55,29 @@
             </Grid>
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2">
+        <StackPanel Grid.Column="0" Grid.Row="2" Margin="10">
+            <DataGrid Name="schemacol" AutoGenerateColumns="False"
+           CanUserAddRows="False"
+           CanUserDeleteRows="False"
+           CanUserSortColumns="False"
+           CanUserReorderColumns="True"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="textcol" Binding="{Binding Name}" Header="Column"/>
+                    <DataGridComboBoxColumn x:Name="combocol" Width="140" SelectedValuePath="Key" DisplayMemberPath="Value" SelectedValueBinding="{Binding Type}" Header="Type" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" Grid.Row="4" Grid.Column="1" Margin="496,0,0,0">
             <Button x:Name="CancelButton" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="15" FontFamily="Roboto Mono Medium" FontSize="14" FontWeight="Bold" Foreground="{DynamicResource MahApps.Brushes.Button.CleanWindow.Close.Background.Pressed}" Background="#FFF5C8C8" Padding="20,5,20,5">Cancel
             </Button>
             <Button x:Name="SubmitButton" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="15" FontFamily="Roboto Mono Medium" FontSize="14" FontWeight="Bold" Foreground="#FF264E21" Background="#FFC9E2B1" BorderBrush="#FF6B9263" Padding="20,5,20,5" FontStyle="Italic">Submit
             </Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="0,224,0,58" Grid.RowSpan="3">
+            <DataGrid x:Name="dataGridPreview" d:ItemsSource="{d:SampleData ItemCount=10}"/>
         </StackPanel>
     </Grid>
 </Window>
