@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[4.15.0, )"
             },
+            "Microsoft.Data.Analysis": {
+              "target": "Package",
+              "version": "[0.19.1, )"
+            },
             "NumSharp": {
               "target": "Package",
               "version": "[0.30.0, )"

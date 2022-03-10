@@ -8,7 +8,7 @@ using NumSharp;
 
 namespace ReservingPropertyAndCasualty
 {
-    public static class ChainLadder
+    public static class GeneralArrayFuntions
     {
         // Les tableaux sont indexés sur zéro : un tableau avec n éléments est indexée de 0 à n-1
         public static decimal[,] CumulativeSumTriangle(decimal[,] triangleArray)
