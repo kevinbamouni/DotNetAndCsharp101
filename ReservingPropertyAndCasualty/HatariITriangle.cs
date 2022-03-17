@@ -20,9 +20,6 @@ namespace ReservingPropertyAndCasualty
             TriangleData = DataFrame.LoadCsv(pathToData, separator, true, default, default, -1, 10, false, encoding) ;
             Name = name;
             Description = description;
-
         }
-
-
     }
 }

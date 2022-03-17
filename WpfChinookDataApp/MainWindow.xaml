@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         mc:Ignorable="d"
-        Title="HATARI PC" Height="450" Width="800" Icon="/icons/hatari_pc.png">
+        Title="HATARI PC" Height="450" Width="800" Icon="/icons/hatari_pc.png" Background="{StaticResource backgroundcolor}">
 
     <Grid>
         <Grid.ColumnDefinitions>

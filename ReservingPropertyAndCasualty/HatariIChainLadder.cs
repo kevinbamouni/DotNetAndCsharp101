@@ -103,20 +103,48 @@ namespace ReservingPropertyAndCasualty
             return Pattern;
         }
 
-        //public decimal[] ProjectionToFullTriangle()
-        //{
+        public decimal[,] ProjectionToFullTriangle(decimal[,] cumulativeReportedOrPaidTriangle, decimal[] CumulativelinkRatios)
+        {
+            decimal[,] fulltriangle = cumulativeReportedOrPaidTriangle;
+            int nRows = cumulativeReportedOrPaidTriangle.GetLength(0);
+            int nColumns = cumulativeReportedOrPaidTriangle.GetLength(1);
+            int n = 1;
+            int lr = 0;
+            for (int j = 1; j < nColumns; j++)
+            {
+                for (int i = nRows-1; j < nRows-1-n; i--)
+                {
+                    fulltriangle[i, j] = fulltriangle[i, j-1] * CumulativelinkRatios[lr];
+                }
+                lr++;
+                n++;
+            }
+            return fulltriangle;
+        }
 
-        //}
+        public decimal[] ReservePerOrigin(decimal[,] projectionToFullTriangle)
+        {
+            int nColumns = projectionToFullTriangle.GetLength(1);
+            decimal[] diag = GeneralArrayFuntions.ChainLadderLastDiagonal(projectionToFullTriangle);
+            decimal[] ultimateColumn = GeneralArrayFuntions.GetColumnN(projectionToFullTriangle, nColumns-1);
+            decimal[] reserves = new decimal[nColumns];
+            for (int i = 0; i < nColumns; i++)
+            {
+                reserves[i] = ultimateColumn[i] - diag[i];
+            }
+            return reserves;
+        }
 
-        //public decimal[] ReservePerOrigin()
-        //{
-
-        //}
-
-        //public decimal[] TotalReserve()
-        //{
-
-        //}
+        public decimal TotalReserve(decimal[] ReservePerOrigin)
+        {
+            decimal totalreserve = 0;
+            int nColumns = ReservePerOrigin.GetLength(1);
+            for (int i = 0; i < nColumns; i++)
+            {
+                totalreserve = totalreserve + ReservePerOrigin[i];
+            }
+            return totalreserve;
+        }
 
         //public Dictionary<string,dynamic> ChainLadderFinalResults()
         //{
