@@ -18,7 +18,7 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "Fluent.Ribbon/9.0.3": {
+      "Fluent.Ribbon/9.0.4": {
         "type": "package",
         "dependencies": {
           "ControlzEx": "[5.0.1, 6.0.0)"
@@ -81,15 +81,15 @@
         "logo-mini.png"
       ]
     },
-    "Fluent.Ribbon/9.0.3": {
-      "sha512": "HbRRLFHW/D5AjmdmstQ8wzhuzEUwRwHOTw0kbW3pCcOL+QKPgXikvV1PAkTRYCki5ZwJVC0LvR5XusehEC578g==",
+    "Fluent.Ribbon/9.0.4": {
+      "sha512": "nMg58+lfqa5hmU6Wgv6f8JfHv/5rr2XD3slnl3cyjhBOFnWUu7pJnzLKNwmKQBJWpSCXcG+7ikhf5l5/7shlhA==",
       "type": "package",
-      "path": "fluent.ribbon/9.0.3",
+      "path": "fluent.ribbon/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Logo.png",
-        "fluent.ribbon.9.0.3.nupkg.sha512",
+        "fluent.ribbon.9.0.4.nupkg.sha512",
         "fluent.ribbon.nuspec",
         "lib/net452/Fluent.dll",
         "lib/net452/Fluent.pdb",
@@ -156,7 +156,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Fluent.Ribbon >= 9.0.3"
+      "Fluent.Ribbon >= 9.0.4"
     ]
   },
   "packageFolders": {
@@ -200,7 +200,7 @@
         "dependencies": {
           "Fluent.Ribbon": {
             "target": "Package",
-            "version": "[9.0.3, )"
+            "version": "[9.0.4, )"
           }
         },
         "imports": [
@@ -221,7 +221,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

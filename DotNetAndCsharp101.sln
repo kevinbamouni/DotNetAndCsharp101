@@ -17,7 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfChinookDataApp", "WpfChi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReservingPropertyAndCasualty", "ReservingPropertyAndCasualty\ReservingPropertyAndCasualty.csproj", "{F8262AED-C19F-49C7-AF90-82A8B9567206}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitReservingPAndCTest", "XUnitReservingPAndCTest\XUnitReservingPAndCTest.csproj", "{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitReservingPAndCTest", "XUnitReservingPAndCTest\XUnitReservingPAndCTest.csproj", "{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportingExcel", "ReportingExcel\ReportingExcel.csproj", "{D47A05E0-BC67-42F2-8A0B-F05333F84D47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsvDataDynamicReader", "CsvDataDynamicReader\CsvDataDynamicReader.csproj", "{008286D5-E0C2-47F2-8570-4F94CB498A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfChainladder101", "WpfChainladder101\WpfChainladder101.csproj", "{5013EC95-EBC5-44A9-8653-891BAE245881}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B04B2F94-EE30-4C6A-B448-73C0A0C70E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47A05E0-BC67-42F2-8A0B-F05333F84D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47A05E0-BC67-42F2-8A0B-F05333F84D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47A05E0-BC67-42F2-8A0B-F05333F84D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47A05E0-BC67-42F2-8A0B-F05333F84D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008286D5-E0C2-47F2-8570-4F94CB498A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008286D5-E0C2-47F2-8570-4F94CB498A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008286D5-E0C2-47F2-8570-4F94CB498A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008286D5-E0C2-47F2-8570-4F94CB498A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5013EC95-EBC5-44A9-8653-891BAE245881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5013EC95-EBC5-44A9-8653-891BAE245881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5013EC95-EBC5-44A9-8653-891BAE245881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5013EC95-EBC5-44A9-8653-891BAE245881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

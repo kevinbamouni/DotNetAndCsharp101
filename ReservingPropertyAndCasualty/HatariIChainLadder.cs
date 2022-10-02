@@ -8,9 +8,10 @@ namespace ReservingPropertyAndCasualty
 {
     public class HatariIChainLadder
     {
-        public HatariIChainLadder()
+        decimal[,] TriangleData { get; }
+        public HatariIChainLadder(decimal[,] triangleData)
         {
-
+            TriangleData = triangleData;
         }
 
         //Step 2
@@ -23,7 +24,7 @@ namespace ReservingPropertyAndCasualty
             {
                 for (int j = 0; j < nColumns-1; j++)
                 {
-                    linkRatioTriangleArray[i, j] = linkRatioTriangleArray[i, j+1] / linkRatioTriangleArray[i, j];
+                    linkRatioTriangleArray[i, j] = triangleArray[i, j+1] / triangleArray[i, j];
                 }
             }
             return linkRatioTriangleArray;
@@ -76,7 +77,7 @@ namespace ReservingPropertyAndCasualty
         }
 
         // 1 divide by CumulativeClaimDevelopmentLinkRatios
-        public decimal[] CumulativeReportedOrPaidPattern(decimal[] linkRatio)
+        public static decimal[] CumulativeReportedOrPaidPattern(decimal[] linkRatio)
         {
             decimal[] Pattern = linkRatio;
             int nRows = linkRatio.GetLength(1);
@@ -90,7 +91,7 @@ namespace ReservingPropertyAndCasualty
         //// lag of CumulativeReportingPattern :
         //// IncremetalReportingtPattern(0) = CumulativeReportingPattern(0)
         //// n > 0 : IncremetalReportingtPattern(n) = CumulativeReportingPattern(n) - CumulativeReportingPattern(n-1)
-        public decimal[] IncremetalReportedOrPaidtPattern(decimal[] cumulativeReportedOrPaidPattern)
+        public static decimal[] IncremetalReportedOrPaidtPattern(decimal[] cumulativeReportedOrPaidPattern)
         {
             decimal[] Pattern = cumulativeReportedOrPaidPattern;
             int nRows = cumulativeReportedOrPaidPattern.GetLength(1);
@@ -103,7 +104,7 @@ namespace ReservingPropertyAndCasualty
             return Pattern;
         }
 
-        public decimal[,] ProjectionToFullTriangle(decimal[,] cumulativeReportedOrPaidTriangle, decimal[] CumulativelinkRatios)
+        public static decimal[,] ProjectionToFullTriangle(decimal[,] cumulativeReportedOrPaidTriangle, decimal[] CumulativelinkRatios)
         {
             decimal[,] fulltriangle = cumulativeReportedOrPaidTriangle;
             int nRows = cumulativeReportedOrPaidTriangle.GetLength(0);
@@ -122,7 +123,7 @@ namespace ReservingPropertyAndCasualty
             return fulltriangle;
         }
 
-        public decimal[] ReservePerOrigin(decimal[,] projectionToFullTriangle)
+        public static decimal[] ReservePerOrigin(decimal[,] projectionToFullTriangle)
         {
             int nColumns = projectionToFullTriangle.GetLength(1);
             decimal[] diag = GeneralArrayFuntions.ChainLadderLastDiagonal(projectionToFullTriangle);
@@ -135,7 +136,7 @@ namespace ReservingPropertyAndCasualty
             return reserves;
         }
 
-        public decimal TotalReserve(decimal[] ReservePerOrigin)
+        public static decimal TotalReserve(decimal[] ReservePerOrigin)
         {
             decimal totalreserve = 0;
             int nColumns = ReservePerOrigin.GetLength(1);
@@ -146,9 +147,92 @@ namespace ReservingPropertyAndCasualty
             return totalreserve;
         }
 
-        //public Dictionary<string,dynamic> ChainLadderFinalResults()
-        //{
+        public static decimal[] SimpleAverage(decimal[,] triangleArray)
+        {
+            decimal[,] AgeToAgeFactors = AgeToAgeLinkRatios(triangleArray);
+            int nColumns = AgeToAgeFactors.GetLength(1);
+            decimal[] result = new decimal[nColumns];
+            for(int i = 0; i < nColumns; i++)
+            {
+                result[i] = GeneralArrayFuntions.GetColumnN(AgeToAgeFactors, i).Sum()/nColumns;
+            }
+            return result;
+        }
 
-        //}
+        public static decimal[] SimpleAverageLatest5(decimal[,] triangleArray)
+        {
+            decimal[,] AgeToAgeFactors = AgeToAgeLinkRatios(triangleArray);
+            int nColumns = AgeToAgeFactors.GetLength(1);
+            decimal[] result = new decimal[nColumns];
+            for (int i = 0; i < nColumns; i++)
+            {
+                result[i] = GeneralArrayFuntions.GetColumnN(AgeToAgeFactors, i).Take(nColumns-i).Skip(nColumns - 5).Sum() / 5;
+            }
+            return result;
+        }
+        public static decimal[] SimpleAverageLatest3(decimal[,] triangleArray) 
+        {
+            decimal[,] AgeToAgeFactors = AgeToAgeLinkRatios(triangleArray);
+            int nColumns = AgeToAgeFactors.GetLength(1);
+            decimal[] result = new decimal[nColumns];
+            for (int i = 0; i < nColumns; i++)
+            {
+                result[i] = GeneralArrayFuntions.GetColumnN(AgeToAgeFactors, i).Take(nColumns - i).Skip(nColumns - 3).Sum() / 3; ;
+            }
+            return result;
+        }
+        public static decimal[] MedialAverageLatest5x1(decimal[,] triangleArray)
+        {
+            decimal[,] AgeToAgeFactors = AgeToAgeLinkRatios(triangleArray);
+            int nColumns = AgeToAgeFactors.GetLength(1);
+            decimal[] result = new decimal[nColumns];
+            for (int i = 0; i < nColumns; i++)
+            {
+                result[i] = GeneralArrayFuntions.GetColumnN(AgeToAgeFactors, i).Sum() / nColumns;
+            }
+            return result;
+        }
+        public static decimal[] VolumeWeightedAverage(decimal[,] triangleArray) {
+            decimal[,] AgeToAgeFactors = AgeToAgeLinkRatios(triangleArray);
+            int nColumns = AgeToAgeFactors.GetLength(1);
+            decimal[] result = new decimal[nColumns];
+            for (int i = 0; i < nColumns; i++)
+            {
+                result[i] = GeneralArrayFuntions.GetColumnN(AgeToAgeFactors, i).Sum() / nColumns;
+            }
+            return result;
+        }
+        public static decimal[] VolumeWeightedAverageLatest5(decimal[,] triangleArray) {
+            decimal[,] AgeToAgeFactors = AgeToAgeLinkRatios(triangleArray);
+            int nColumns = AgeToAgeFactors.GetLength(1);
+            decimal[] result = new decimal[nColumns];
+            for (int i = 0; i < nColumns; i++)
+            {
+                result[i] = GeneralArrayFuntions.GetColumnN(AgeToAgeFactors, i).Sum() / nColumns;
+            }
+            return result;
+        }
+        public static decimal[] VolumeWeightedAverageLatest3(decimal[,] triangleArray) {
+            decimal[,] AgeToAgeFactors = AgeToAgeLinkRatios(triangleArray);
+            int nColumns = AgeToAgeFactors.GetLength(1);
+            decimal[] result = new decimal[nColumns];
+            for (int i = 0; i < nColumns; i++)
+            {
+                result[i] = GeneralArrayFuntions.GetColumnN(AgeToAgeFactors, i).Sum() / nColumns;
+            }
+            return result;
+        }
+        public static decimal[] GeometricAverageLatest4(decimal[,] triangleArray) {
+            decimal[,] AgeToAgeFactors = AgeToAgeLinkRatios(triangleArray);
+            int nColumns = AgeToAgeFactors.GetLength(1);
+            decimal[] result = new decimal[nColumns];
+            for (int i = 0; i < nColumns; i++)
+            {
+                result[i] = GeneralArrayFuntions.GetColumnN(AgeToAgeFactors, i).Sum() / nColumns;
+            }
+            return result;
+        }
+
+
     }
 }

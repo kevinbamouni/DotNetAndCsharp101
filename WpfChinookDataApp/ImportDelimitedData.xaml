@@ -4,9 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfChinookDataApp"
-        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="WpfChinookDataApp.ImportDelimitedData"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
+        x:Class="WpfChinookDataApp.ImportDelimitedData"
         mc:Ignorable="d"
-        Title="Import delimited data" Height="750" Width="900" ResizeMode="NoResize" Background="{StaticResource backgroundcolor}">
+        Title="Import delimited data" 
+        Height="750" 
+        Width="900" 
+        ResizeMode="NoResize" 
+        Background="{StaticResource backgroundcolor}">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -20,14 +25,27 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <GroupBox Margin="5,5,5,5" Padding="2" Header="File to import:" Grid.Row="0" Grid.ColumnSpan="2">
+        <GroupBox Margin="5,5,5,5" 
+                  Padding="2" 
+                  Header="File to import:" 
+                  Grid.Row="0" 
+                  Grid.ColumnSpan="2">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="8*" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="5" />
-                <Button Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" FontWeight="Bold" FontStyle="Italic" Content="Load File"/>
+                <TextBox Grid.Column="0" 
+                         VerticalAlignment="Center" 
+                         HorizontalAlignment="Stretch" 
+                         Margin="5"/>
+                <Button Grid.Column="1" 
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Center" 
+                        Margin="5" 
+                        FontWeight="Bold" 
+                        FontStyle="Italic" 
+                        Content="Load File"/>
             </Grid>
         </GroupBox>
 
@@ -44,15 +62,77 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <Label Content="ComboBox Caption:" Target="{Binding ElementName=TextDelimiter}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11"/>
-                <Label Grid.Row="1" Grid.Column="0" Content="Encoding:" Target="{Binding ElementName=TextEncoding}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="11" Margin="49,0,0,0"/>
-                <Label Grid.Row="2" Grid.Column="0" Content="Quote stripping:" Target="{Binding ElementName=QuoteStripping}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="11" Margin="18,0,0,0"/>
-                <Label Grid.Row="3" Grid.Column="0" Content="Decimal separator:" Target="{Binding ElementName=DecimalSeparator}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="11" Margin="7,0,0,0"/>
+                <Label Content="ComboBox Caption:" 
+                       Target="{Binding ElementName=TextDelimiter}" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" 
+                       FontSize="11"/>
+                <Label Grid.Row="1" Grid.Column="0" 
+                       Content="Encoding:" 
+                       Target="{Binding 
+                       ElementName=TextEncoding}" 
+                       HorizontalAlignment="Left" 
+                       VerticalAlignment="Center" 
+                       FontSize="11" 
+                       Margin="49,0,0,0"/>
+                <Label Grid.Row="2" Grid.Column="0" 
+                       Content="Quote stripping:" 
+                       Target="{Binding ElementName=QuoteStripping}" 
+                       HorizontalAlignment="Left" 
+                       VerticalAlignment="Center" 
+                       FontSize="11" 
+                       Margin="18,0,0,0"/>
+                <Label Grid.Row="3" Grid.Column="0" 
+                       Content="Decimal separator:" 
+                       Target="{Binding ElementName=DecimalSeparator}" 
+                       HorizontalAlignment="Left" 
+                       VerticalAlignment="Center" 
+                       FontSize="11" 
+                       Margin="7,0,0,0"/>
 
-                <ComboBox Grid.Row="0" Grid.Column="1" x:Name="TextDelimiter" Text="My Cities:" IsEditable="False" IsReadOnly="true" Margin="5,5,5,5" Padding="5,5,5,5" HorizontalContentAlignment="Center" Grid.ColumnSpan="4" FontSize="11"/>
-                <ComboBox Grid.Row="1" Grid.Column="1" x:Name="TextEncoding"  Text="Encoding:" IsEditable="False" IsReadOnly="true" Margin="5,5,5,5" Padding="5,5,5,5" HorizontalContentAlignment="Center" Grid.ColumnSpan="4" FontSize="11"/>
-                <ComboBox Grid.Row="2" Grid.Column="1" x:Name="QuoteStripping" Text="Quote stripping:" IsEditable="False" IsReadOnly="true" Margin="5,5,5,5" Padding="5,5,5,5" HorizontalContentAlignment="Center" Grid.ColumnSpan="4" FontSize="11"/>
-                <ComboBox Grid.Row="3" Grid.Column="1" x:Name="DecimalSeparator" Text="Decimal separator:" IsEditable="False" IsReadOnly="true" Margin="5,5,5,5" Padding="5,5,5,5" HorizontalContentAlignment="Center" Grid.ColumnSpan="4" FontSize="11"/>
+                <ComboBox Grid.Row="0" Grid.Column="1" 
+                          x:Name="TextDelimiter" 
+                          Text="My Cities:" 
+                          IsEditable="False" 
+                          IsReadOnly="true" 
+                          Margin="5,5,5,5" 
+                          Padding="5,5,5,5" 
+                          HorizontalContentAlignment="Center" 
+                          Grid.ColumnSpan="4" 
+                          FontSize="11"/>
+                <ComboBox Grid.Row="1" 
+                          Grid.Column="1" 
+                          x:Name="TextEncoding"  
+                          Text="Encoding:" 
+                          IsEditable="False" 
+                          IsReadOnly="true" 
+                          Margin="5,5,5,5" 
+                          Padding="5,5,5,5" 
+                          HorizontalContentAlignment="Center" 
+                          Grid.ColumnSpan="4" 
+                          FontSize="11"/>
+                <ComboBox Grid.Row="2" 
+                          Grid.Column="1" 
+                          x:Name="QuoteStripping" 
+                          Text="Quote stripping:" 
+                          IsEditable="False" 
+                          IsReadOnly="true" 
+                          Margin="5,5,5,5" 
+                          Padding="5,5,5,5" 
+                          HorizontalContentAlignment="Center" 
+                          Grid.ColumnSpan="4" 
+                          FontSize="11"/>
+                <ComboBox Grid.Row="3" 
+                          Grid.Column="1" 
+                          x:Name="DecimalSeparator" 
+                          Text="Decimal separator:" 
+                          IsEditable="False" 
+                          IsReadOnly="true" 
+                          Margin="5,5,5,5" 
+                          Padding="5,5,5,5" 
+                          HorizontalContentAlignment="Center" 
+                          Grid.ColumnSpan="4" 
+                          FontSize="11"/>
             </Grid>
         </StackPanel>
 
@@ -68,7 +148,13 @@
                     <Style/>
                 </DataGrid.CellStyle>
                 <DataGrid.Columns>
-                    <DataGridTextColumn x:Name="textcol" Binding="{Binding Name}" Header="Column" CanUserResize="False" CanUserSort="False" CanUserReorder="False" IsReadOnly="True">
+                    <DataGridTextColumn x:Name="textcol" 
+                                        Binding="{Binding Name}" 
+                                        Header="Column" 
+                                        CanUserResize="False" 
+                                        CanUserSort="False" 
+                                        CanUserReorder="False" 
+                                        IsReadOnly="True">
                         <DataGridTextColumn.CellStyle>
                             <Style TargetType="{x:Type DataGridCell}">
                                 <Setter Property="Background" 
@@ -76,7 +162,15 @@
                             </Style>
                         </DataGridTextColumn.CellStyle>
                     </DataGridTextColumn>
-                    <DataGridComboBoxColumn x:Name="combocol" Width="140" SelectedValuePath="Key" DisplayMemberPath="Value" SelectedValueBinding="{Binding Type}" Header="Type" CanUserResize="False" CanUserSort="False" CanUserReorder="False">
+                    <DataGridComboBoxColumn x:Name="combocol" 
+                                            Width="140" 
+                                            SelectedValuePath="Key" 
+                                            DisplayMemberPath="Value" 
+                                            SelectedValueBinding="{Binding Type}" 
+                                            Header="Type" 
+                                            CanUserResize="False" 
+                                            CanUserSort="False" 
+                                            CanUserReorder="False">
                         <DataGridComboBoxColumn.CellStyle>
                             <Style TargetType="{x:Type DataGridCell}">
                                 <Setter Property="Background" 
@@ -88,9 +182,35 @@
             </DataGrid>
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal" Grid.Row="4" Grid.Column="1" >
-            <Button x:Name="CancelButton" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="15" FontFamily="Roboto Mono Medium" FontSize="14" FontWeight="Bold" Foreground="{DynamicResource MahApps.Brushes.Button.CleanWindow.Close.Background.Pressed}" Background="#FFF5C8C8" Padding="20,5,20,5" Content="Cancel"/>
-            <Button x:Name="SubmitButton" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="15" FontFamily="Roboto Mono Medium" FontSize="14" FontWeight="Bold" Foreground="#FF264E21" Background="#FFC9E2B1" BorderBrush="#FF6B9263" Padding="20,5,20,5" FontStyle="Italic" Content="Submit"/>
+        <StackPanel HorizontalAlignment="Right" 
+                    VerticalAlignment="Center" 
+                    Orientation="Horizontal" 
+                    Grid.Row="4" 
+                    Grid.Column="1" >
+            <Button x:Name="CancelButton" 
+                    HorizontalAlignment="Right" 
+                    VerticalAlignment="Center" 
+                    Margin="15" 
+                    FontFamily="Roboto Mono Medium" 
+                    FontSize="14" 
+                    FontWeight="Bold" 
+                    Foreground="{DynamicResource MahApps.Brushes.Button.CleanWindow.Close.Background.Pressed}" 
+                    Background="#FFF5C8C8" 
+                    Padding="20,5,20,5" 
+                    Content="Cancel"/>
+            <Button x:Name="SubmitButton" 
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Margin="15" 
+                    FontFamily="Roboto Mono Medium" 
+                    FontSize="14" 
+                    FontWeight="Bold" 
+                    Foreground="#FF264E21" 
+                    Background="#FFC9E2B1" 
+                    BorderBrush="#FF6B9263" 
+                    Padding="20,5,20,5" 
+                    FontStyle="Italic" 
+                    Content="Submit"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="1" Margin="10">
             <DataGrid x:Name="dataGridPreview" d:ItemsSource="{d:SampleData ItemCount=10}"/>

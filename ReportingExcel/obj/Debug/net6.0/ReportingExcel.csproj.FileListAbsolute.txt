@@ -1,0 +1,17 @@
+C:\Users\work\source\repos\databasesoft\ReportingExcel\bin\Debug\net6.0\ReportingExcel.exe
+C:\Users\work\source\repos\databasesoft\ReportingExcel\bin\Debug\net6.0\ReportingExcel.deps.json
+C:\Users\work\source\repos\databasesoft\ReportingExcel\bin\Debug\net6.0\ReportingExcel.runtimeconfig.json
+C:\Users\work\source\repos\databasesoft\ReportingExcel\bin\Debug\net6.0\ReportingExcel.dll
+C:\Users\work\source\repos\databasesoft\ReportingExcel\bin\Debug\net6.0\ReportingExcel.pdb
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ReportingExcel.csproj.AssemblyReference.cache
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ReportingExcel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ReportingExcel.AssemblyInfoInputs.cache
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ReportingExcel.AssemblyInfo.cs
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ReportingExcel.csproj.CoreCompileInputs.cache
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ReportingExcel.dll
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\refint\ReportingExcel.dll
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ReportingExcel.pdb
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ReportingExcel.genruntimeconfig.cache
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ref\ReportingExcel.dll
+C:\Users\work\source\repos\databasesoft\ReportingExcel\bin\Debug\net6.0\Microsoft.Office.Interop.Excel.dll
+C:\Users\work\source\repos\databasesoft\ReportingExcel\obj\Debug\net6.0\ReportingExcel.csproj.CopyComplete

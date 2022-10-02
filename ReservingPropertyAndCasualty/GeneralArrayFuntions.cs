@@ -77,5 +77,75 @@ namespace ReservingPropertyAndCasualty
             }
             return array;
         }
+
+        public static decimal[] FirstVectorLessSecondVector(decimal[] v1, decimal[] v2)
+        {
+            decimal[] result = new decimal[v1.Length];
+            for (int i = 0; i < v1.Length; i++)
+            {
+                result[i] = v1[i]-v2[i];
+            }
+            return result;
+        }
+
+        public static decimal[] FirstVectorPlusSecondVector(decimal[] v1, decimal[] v2)
+        {
+            decimal[] result = new decimal[v1.Length];
+            for (int i = 0; i < v1.Length; i++)
+            {
+                result[i] = v1[i] + v2[i];
+            }
+            return result;
+        }
+
+        public static decimal[] FirstVectorTimeSecondVector(decimal[] v1, decimal[] v2)
+        {
+            decimal[] result = new decimal[v1.Length];
+            for (int i = 0; i < v1.Length; i++)
+            {
+                result[i] = v1[i] * v2[i];
+            }
+            return result;
+        }
+
+        public static decimal[] FirstVectorTimeSecondVector(decimal[] v1, decimal v2)
+        {
+            decimal[] result = new decimal[v1.Length];
+            for (int i = 0; i < v1.Length; i++)
+            {
+                result[i] = v1[i] * v2;
+            }
+            return result;
+        }
+
+        public static decimal[] FirstVectorDivideSecondVector(decimal[] v1, decimal v2)
+        {
+            decimal[] result = new decimal[v1.Length];
+            for (int i = 0; i < v1.Length; i++)
+            {
+                result[i] = v1[i] / v2;
+            }
+            return result;
+        }
+
+        public static decimal[] FirstVectorDivideSecondVector(decimal[] v1, decimal[] v2)
+        {
+            decimal[] result = new decimal[v1.Length];
+            for (int i = 0; i < v1.Length; i++)
+            {
+                result[i] = v1[i] / v2[i];
+            }
+            return result;
+        }
+
+        public static decimal TwoVectorsProduct(decimal[] v1, decimal[] v2)
+        {
+            decimal result = 0;
+            for (int i = 0; i < v1.Length; i++)
+            {
+                result = result + v1[i] * v2[i];
+            }
+            return result;
+        }
     }
 }

@@ -50,11 +50,11 @@
             },
             "Microsoft.Data.Sqlite": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "ScottPlot.WPF": {
               "target": "Package",
-              "version": "[4.1.33, )"
+              "version": "[4.1.36, )"
             }
           },
           "imports": [
@@ -75,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MWsXWI+JvywA+v+FRUb84Jq5G05r/ZXT5xhoyLi5pD5gLm/Q4c1JcRL87lggyUVPUmhk3JXwq0WpQ4M1TqFEYA==",
+  "dgSpecHash": "xcDu4uDBGFCY1gBG9GTdE+cZEhs1kiLMlQ+91DF1WBNpygLOyEoUzMwnCBebhqiZTL3a00XXmGhAkRaLgCjKWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\work\\source\\repos\\databasesoft\\optionpricing\\CallOptionPricing.csproj",
   "expectedPackageFiles": [

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "n/7Qn4c+XDCtKOYZIlttCPuQTqMg42WUotJZkfFXC11enTKxue0q1bph/shekTLuCqXqQBRU48ORhe1ytY1alg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\work\\source\\repos\\databasesoft\\WpfChainladder101\\WpfChainladder101.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\work\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
+    "C:\\Users\\work\\.nuget\\packages\\mathnet.numerics.data.text\\5.0.0\\mathnet.numerics.data.text.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

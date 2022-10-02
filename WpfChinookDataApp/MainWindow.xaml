@@ -72,7 +72,11 @@
                     <Label HorizontalAlignment="Left" VerticalAlignment="Center">Navigation Pane</Label>
                     <ToggleButton HorizontalAlignment="Right" VerticalAlignment="Center" Background="LightGray">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/icons/arrows-up-down-solid.png" Width="10" Height="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Image Source="/icons/arrows-up-down-solid.png" 
+                                   Width="10" 
+                                   Height="10" 
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center"/>
                         </StackPanel>
                     </ToggleButton>
                 </DockPanel>
@@ -114,7 +118,12 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                        <DataGrid x:Name="InputDataGrid" Grid.Row="0" Margin="5,5,5,5"  d:Visibility="Visible" d:IsReadOnly="True" Grid.ColumnSpan="2"/>
+                        <DataGrid x:Name="InputDataGrid" 
+                                  Grid.Row="0" 
+                                  Margin="5,5,5,5"  
+                                  d:Visibility="Visible" 
+                                  d:IsReadOnly="True" 
+                                  Grid.ColumnSpan="2"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="PROGRAM" Style="{StaticResource TabItemStyle1}">
@@ -142,7 +151,15 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                        <TextBlock x:Name="LogTextBlock" Grid.Row="0" FontSize="14" FontFamily="consolas" FontStyle="Italic" TextWrapping="Wrap" Margin="5,5,5,5" Padding="5,5,5,5" Background="#f5f6ff">
+                        <TextBlock x:Name="LogTextBlock" 
+                                   Grid.Row="0" 
+                                   FontSize="14" 
+                                   FontFamily="consolas" 
+                                   FontStyle="Italic" 
+                                   TextWrapping="Wrap" 
+                                   Margin="5,5,5,5" 
+                                   Padding="5,5,5,5" 
+                                   Background="#f5f6ff">
                             Chaque action d'un système informatique (ouverture d'une session, installation d'un programme, navigation sur Internet...) produit un fichier log. Ces fichiers textes listent chronologiquement les évènements exécutés. Ils s'avèrent utiles pour comprendre la provenance d'une erreur en cas de bug.
                             Ils permettent également d'établir des statistiques de connexions à un site Web ou à un serveur, grâce à des outils comme WebAlizer ou Webtrends. L'analyse des fichiers logs peut se faire manuellement, mais les logs ne sont pas aisés à déchiffrer, et les outils d'analyse fournissent la plupart des informations nécessaires.
                         </TextBlock>

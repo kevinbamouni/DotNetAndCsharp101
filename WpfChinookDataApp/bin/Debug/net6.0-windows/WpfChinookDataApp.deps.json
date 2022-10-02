@@ -10,8 +10,8 @@
         "dependencies": {
           "Dapper": "2.0.123",
           "MahApps.Metro": "2.4.9",
-          "Microsoft.Data.Sqlite": "6.0.2",
-          "ScottPlot.WPF": "4.1.33"
+          "Microsoft.Data.Sqlite": "6.0.3",
+          "ScottPlot.WPF": "4.1.36"
         },
         "runtime": {
           "WpfChinookDataApp.dll": {}
@@ -53,20 +53,20 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite/6.0.2": {
+      "Microsoft.Data.Sqlite/6.0.3": {
         "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "6.0.2",
+          "Microsoft.Data.Sqlite.Core": "6.0.3",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.0.6"
         }
       },
-      "Microsoft.Data.Sqlite.Core/6.0.2": {
+      "Microsoft.Data.Sqlite.Core/6.0.3": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.0.6"
         },
         "runtime": {
           "lib/net6.0/Microsoft.Data.Sqlite.dll": {
-            "assemblyVersion": "6.0.2.0",
-            "fileVersion": "6.0.222.6404"
+            "assemblyVersion": "6.0.3.0",
+            "fileVersion": "6.0.322.12306"
           }
         }
       },
@@ -84,25 +84,25 @@
           }
         }
       },
-      "ScottPlot/4.1.33": {
+      "ScottPlot/4.1.36": {
         "dependencies": {
           "System.Drawing.Common": "4.6.1"
         },
         "runtime": {
           "lib/net5.0/ScottPlot.dll": {
-            "assemblyVersion": "4.1.33.0",
-            "fileVersion": "4.1.33.0"
+            "assemblyVersion": "4.1.36.0",
+            "fileVersion": "4.1.36.0"
           }
         }
       },
-      "ScottPlot.WPF/4.1.33": {
+      "ScottPlot.WPF/4.1.36": {
         "dependencies": {
-          "ScottPlot": "4.1.33"
+          "ScottPlot": "4.1.36"
         },
         "runtime": {
           "lib/net6.0-windows7.0/ScottPlot.WPF.dll": {
-            "assemblyVersion": "4.1.33.0",
-            "fileVersion": "4.1.33.0"
+            "assemblyVersion": "4.1.36.0",
+            "fileVersion": "4.1.36.0"
           }
         }
       },
@@ -257,19 +257,19 @@
       "path": "mahapps.metro/2.4.9",
       "hashPath": "mahapps.metro.2.4.9.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite/6.0.2": {
+    "Microsoft.Data.Sqlite/6.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-smHmMptnsFRRxQFLFUIzXhxbdcLLZNri+LHahaGvwwdrOf0gG6hammLUx5l6wjr9il9dRh12RyM3Q3/QY/wVtA==",
-      "path": "microsoft.data.sqlite/6.0.2",
-      "hashPath": "microsoft.data.sqlite.6.0.2.nupkg.sha512"
+      "sha512": "sha512-7KR/Jde8nsii7aKWkT7VBmbOM6XuXD8tNImA0C69qPygtcNZXhqryVlINsQwd1FcpjCFXdBUjagml0I8MJ8++w==",
+      "path": "microsoft.data.sqlite/6.0.3",
+      "hashPath": "microsoft.data.sqlite.6.0.3.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite.Core/6.0.2": {
+    "Microsoft.Data.Sqlite.Core/6.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4q17iqpGkYdj5lyeCKpln6oT5/qBbZ3J0Tyzi8tIk1vkM8XtuG3Zx+YT5eYuXa/TrieM731nxl/lrDvtdSK6Ww==",
-      "path": "microsoft.data.sqlite.core/6.0.2",
-      "hashPath": "microsoft.data.sqlite.core.6.0.2.nupkg.sha512"
+      "sha512": "sha512-3EIhLzG+WeJ2AtmGph8aSA5pH9weDOZ9Fox6oaDSiPvj6TIehzYkdW0ySMAfckTbv8V1vCMeEmtqhwEmyK9fYA==",
+      "path": "microsoft.data.sqlite.core/6.0.3",
+      "hashPath": "microsoft.data.sqlite.core.6.0.3.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.0.0": {
       "type": "package",
@@ -292,19 +292,19 @@
       "path": "microsoft.xaml.behaviors.wpf/1.1.19",
       "hashPath": "microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512"
     },
-    "ScottPlot/4.1.33": {
+    "ScottPlot/4.1.36": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-milMHt3POIcn3N2Wfi777FqegFDiMmjGVET0fm6b9OrVCIbPL/me0uWMuoQILcp1Lx9oMSMvH52qUBp3yEcM5g==",
-      "path": "scottplot/4.1.33",
-      "hashPath": "scottplot.4.1.33.nupkg.sha512"
+      "sha512": "sha512-KDX5w4O1b9MvYn0b5jHBpFrQeV/xugIsrArIFksTnxC0c0Tr0e7HeO8AuUlspQrqOk1kTC5ao7PQbWspzXf7kw==",
+      "path": "scottplot/4.1.36",
+      "hashPath": "scottplot.4.1.36.nupkg.sha512"
     },
-    "ScottPlot.WPF/4.1.33": {
+    "ScottPlot.WPF/4.1.36": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-q5d36rdctq25kQhEjEId6UhCf/k9hzli+IuJrU57l5BkmcKI3+Ytt5SgLnwZwge5zpGeydi5XQoFOlKaNelO2w==",
-      "path": "scottplot.wpf/4.1.33",
-      "hashPath": "scottplot.wpf.4.1.33.nupkg.sha512"
+      "sha512": "sha512-02J/rQajm1SHBtnrCHnRkMn0439swtvoE52q3ifbk5/Fb5uu5GR7OdhnGIkwiDAAsKKynKDXpz6FVQPQ8Q6KQQ==",
+      "path": "scottplot.wpf/4.1.36",
+      "hashPath": "scottplot.wpf.4.1.36.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.6": {
       "type": "package",
