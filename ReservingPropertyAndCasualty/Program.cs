@@ -48,6 +48,9 @@ namespace ReservingPropertyAndCasualty {
             decimal[] vmav3 = HatariIChainLadder.VolumeWeightedAverageLatest3(ReportedClaims);
             decimal[] vmav5 = HatariIChainLadder.VolumeWeightedAverageLatest5(ReportedClaims);
             decimal[] geom = HatariIChainLadder.GeometricAverageLatest4(agetogae);
+            decimal[] cdf = HatariIChainLadder.CumulativeClaimDevelopmentFactor(cumulativeDev);
+            decimal[] pat1 = HatariIChainLadder.CumulativePercentagePattern(cdf);
+            decimal[] pat2 = HatariIChainLadder.IncrementalPercentagePattern(pat1);
 
             Console.WriteLine("Hello, World!");
 
