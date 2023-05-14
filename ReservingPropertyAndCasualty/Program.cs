@@ -52,8 +52,14 @@ namespace ReservingPropertyAndCasualty {
             decimal[] pat1 = HatariIChainLadder.CumulativePercentagePattern(cdf);
             decimal[] pat2 = HatariIChainLadder.IncrementalPercentagePattern(pat1);
 
+            MethodChainLadder mtest = new MethodChainLadder(PaidClaims);
+            mtest.fit();
+            Dictionary<string, dynamic> restest = new Dictionary<string, dynamic>();
+            restest = mtest.FullModelResult();
+            string js;
+            js = mtest.FullModelResultJsonText();
             Console.WriteLine("Hello, World!");
 
         }
-            }
-        }
+    }
+}

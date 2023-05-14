@@ -150,7 +150,7 @@ namespace ReservingPropertyAndCasualty
             return reserves;
         }
 
-        public static decimal TotalReserve(decimal[] ReservePerOrigin)
+        public static dynamic TotalReserve(decimal[] ReservePerOrigin)
         {
             //decimal totalreserve = 0;
             //int nColumns = ReservePerOrigin.GetLength(1);

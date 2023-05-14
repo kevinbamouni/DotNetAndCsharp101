@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
-        <DataGrid x:Name="dataGrid1" Height="100" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        
+        <DataGrid x:Name="dataGrid1" Height="100" AutoGenerateColumns="False" />
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="TextBlock"/>
         <DataGrid x:Name="dataGrid2" Height="100" d:ItemsSource="{d:SampleData ItemCount=5}"/>
     </StackPanel>
 </Window>

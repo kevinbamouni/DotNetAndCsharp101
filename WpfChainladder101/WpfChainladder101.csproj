@@ -12,4 +12,8 @@
     <PackageReference Include="MathNet.Numerics.Data.Text" Version="5.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReservingPropertyAndCasualty\ReservingPropertyAndCasualty.csproj" />
+  </ItemGroup>
+
 </Project>

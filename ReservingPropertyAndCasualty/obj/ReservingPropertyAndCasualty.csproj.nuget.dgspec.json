@@ -44,13 +44,17 @@
               "target": "Package",
               "version": "[3.8.0, )"
             },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
             "MathNet.Numerics": {
               "target": "Package",
-              "version": "[4.15.0, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Data.Analysis": {
               "target": "Package",
-              "version": "[0.19.1, )"
+              "version": "[0.20.0, )"
             },
             "NumSharp": {
               "target": "Package",

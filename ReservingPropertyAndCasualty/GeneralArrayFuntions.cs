@@ -39,6 +39,21 @@ namespace ReservingPropertyAndCasualty
             else { throw new IndexOutOfRangeException(); }
         }
 
+        public static double[] GetColumnN(double[,] triangleArray, int n)
+        {
+            int nColumns = triangleArray.GetLength(1);
+            if (n < nColumns)
+            {
+                double[] array = new double[nColumns];
+                for (int i = 0; i < nColumns; i++)
+                {
+                    array[i] = triangleArray[i, n];
+                }
+                return array;
+            }
+            else { throw new IndexOutOfRangeException(); }
+        }
+
         public static decimal[] GetRowN(decimal[,] triangleArray, int n)
         {
             
@@ -74,6 +89,18 @@ namespace ReservingPropertyAndCasualty
             for (int i = 0; i < nRows; i++)
             {
                 array[i] = triangleArray[i, nColumns-1-i];
+            }
+            return array;
+        }
+
+        public static double[] ChainLadderLastDiagonal(double[,] triangleArray)
+        {
+            int nRows = triangleArray.GetLength(0);
+            double[] array = new double[nRows];
+            int nColumns = triangleArray.GetLength(1);
+            for (int i = 0; i < nRows; i++)
+            {
+                array[i] = triangleArray[i, nColumns - 1 - i];
             }
             return array;
         }
